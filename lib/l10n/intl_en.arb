@@ -1,0 +1,49 @@
+
+{ 
+    "@@locale": "en_US",
+    "mental_health":"Mental Health",
+    "doctor_assistant":"Doctor Assistant",
+
+    "short_description":"mental health care application",
+    "sign_in":"Sign In",
+    "creat_acount":"Creat Account",
+
+
+
+    "___________Main Drawer Words__________________":"__",
+    "aboutApp":"About App",
+    "using":"Instructions for use",
+    "sign_up":"Sign Up",
+    "callingCenter":"Customer Service Center",
+    "log_in":"Log In",
+    "Language":"Language",
+    "English":"English",
+    "Arabic":"Arabic",   
+    "change_password":"Change Password",
+    "logout":"Log Out",
+    "___________Wellcome Screen Sentences__________________":"_____",
+
+    "welcome1":"Welcome Doctor, we are glad to have you join us",
+    "welcome2":"We are working to take advantage of technological progress and employ it in the medical field",
+    "welcome3":"We aim to make diagnosing mental illness easier than ever",
+    "welcome4":"We have created tools to help you diagnose mental illness",
+    "welcome5":"You can communicate with patients remotely during the treatment period",
+    "welcome6":"We hope these tools are effective and help you",
+    "___________UserProfile__________________":"__",
+    "userName":"User name",
+    "fullName":"Full Name",
+    "address":"address ",
+    "password":"Password",
+    "age":"Age",
+    "phone":"Phone",
+    "email":"Email",
+    "submit":"submit",
+    "next":"Next",
+
+    "forgot_your_password":"Forgot your password ?",
+    "do_not_have_an_account":"Don't have an account ?",
+    "have_an_account":"have an account ?"
+
+    
+
+}
