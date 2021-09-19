@@ -35,6 +35,8 @@ dependencies:
   http:
   sqflite:
   shared_preferences:
+  smooth_page_indicator:
+  photo_view:
   
 dev_dependencies:
   flutter_test:

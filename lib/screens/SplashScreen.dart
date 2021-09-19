@@ -1,8 +1,10 @@
 import 'dart:async';
 
-import 'package:doctor_assistant/services/GetCountries.dart';
+import 'package:doctor_assistant/models/SignUpInformation.dart';
+import 'package:doctor_assistant/screens/HomePage.dart';
+import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-import '../models/FavoriteSetting.dart';
 import '../generated/l10n.dart';
 import '../utils/FontsStyle.dart';
 import 'IntroPage.dart';
@@ -17,22 +19,31 @@ class AppSplashScreen extends StatefulWidget {
 class _AppSplashScreenState extends State<AppSplashScreen> {
   Timer viewTime;
   int timeValue = 5;
+  bool isNewClient;
   @override
   void initState() {
-    Future res = GetCountries.fetchAllCountries();
+    /*  Future res = GetCountries.fetchAllCountries();
     res.then((value) {
       Navigator.of(context).pop();
       Navigator.of(context).pushNamed(IntroPage.id);
-    });
-    /*viewTime = new Timer.periodic(Duration(seconds: 1), (Timer t) {
+    });*/
+
+    viewTime = new Timer.periodic(Duration(seconds: 1), (Timer t) {
       if (timeValue == 0) {
         t.cancel();
         Navigator.of(context).pop();
-        Navigator.of(context).pushNamed(HomePage.id);
+        Navigator.of(context).pushNamed(IntroPage.id);
+        /* if (Provider.of<SignUpInformation>(context).isNewClient) {
+          Navigator.of(context).pop();
+          Navigator.of(context).pushNamed(IntroPage.id);
+        } else {
+          Navigator.of(context).pop();
+          Navigator.of(context).pushNamed(HomePage.id);
+        }*/
       } else {
         timeValue--;
       }
-    });*/
+    });
   }
 
   @override

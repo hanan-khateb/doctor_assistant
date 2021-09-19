@@ -1,3 +1,4 @@
+import 'package:doctor_assistant/utils/AppColors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -29,4 +30,9 @@ class FontsStyle {
     return TextStyle(
         color: Colors.black, fontFamily: 'SFUIDisplay', fontSize: fSize);
   }
+
+  static final welcomeAction = TextStyle(
+      color: AppColors.appBarColor,
+      fontSize: 20,
+      fontFamily: "KaiseiHarunoUmi");
 }

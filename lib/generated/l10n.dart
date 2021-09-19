@@ -85,6 +85,26 @@ class S {
     );
   }
 
+  /// `skip`
+  String get skip {
+    return Intl.message(
+      'skip',
+      name: 'skip',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `previous`
+  String get previous {
+    return Intl.message(
+      'previous',
+      name: 'previous',
+      desc: '',
+      args: [],
+    );
+  }
+
   // skipped getter for the '___________Main Drawer Words__________________' key
 
   /// `About App`
@@ -374,6 +394,128 @@ class S {
     return Intl.message(
       'have an account ?',
       name: 'have_an_account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  // skipped getter for the '__________Patients Tab__________________' key
+
+  /// `ID`
+  String get ID {
+    return Intl.message(
+      'ID',
+      name: 'ID',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save`
+  String get save {
+    return Intl.message(
+      'Save',
+      name: 'save',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get Name {
+    return Intl.message(
+      'Name',
+      name: 'Name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Age`
+  String get Age {
+    return Intl.message(
+      'Age',
+      name: 'Age',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `date`
+  String get date {
+    return Intl.message(
+      'date',
+      name: 'date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `beck`
+  String get beck {
+    return Intl.message(
+      'beck',
+      name: 'beck',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `checked`
+  String get checked {
+    return Intl.message(
+      'checked',
+      name: 'checked',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Patients information`
+  String get Patients_information {
+    return Intl.message(
+      'Patients information',
+      name: 'Patients_information',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `__`
+  String get __________Article_Tab__________________ {
+    return Intl.message(
+      '__',
+      name: '__________Article_Tab__________________',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Creat Article`
+  String get Creat_article {
+    return Intl.message(
+      'Creat Article',
+      name: 'Creat_article',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Article Title`
+  String get article_title {
+    return Intl.message(
+      'Article Title',
+      name: 'article_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Article Content`
+  String get article_content {
+    return Intl.message(
+      'Article Content',
+      name: 'article_content',
       desc: '',
       args: [],
     );

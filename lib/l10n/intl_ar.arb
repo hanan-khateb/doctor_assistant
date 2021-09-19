@@ -7,6 +7,9 @@
     "short_description":"تطبيق رعاية الصحة العقلية",
     "sign_in":"تسجيل الدخول",
     "creat_acount":"إنشاء حساب",
+    "skip":"تخطي",
+    "previous":"السابق",
+
 
     "___________Main Drawer Words__________________":"__",
     "aboutApp":"حول التطبيق",
@@ -41,7 +44,24 @@
 "next":"التالي",
 "forgot_your_password":" هل نسيت كلمة السر ؟",
 "do_not_have_an_account":"ليس لديك حساب ؟",
-"have_an_account":"هل لديك حساب ؟"
+"have_an_account":"هل لديك حساب ؟",
+"__________Patients Tab__________________":"__",
+"ID":"الرقم",
+"save":"حفظ",
+"Name":"اسم المريض",
+"Age":"العمر",
+"date":"التاريخ",
+"beck":"النتيجة",
+"checked":"تم المشاهدة",
+"Patients_information":"معلومات المرضى",
+
+"__________Article_Tab__________________":"__",
+
+"Creat_article":"إنشاء مقالة",
+"article_title":"عنوان مقالة",
+"article_content":" محتوى المقالة"
+
+
 
 
 

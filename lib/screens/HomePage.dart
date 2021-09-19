@@ -15,30 +15,29 @@ class HomePage extends StatelessWidget {
     return DefaultTabController(
         length: 3,
         child: new Scaffold(
+          resizeToAvoidBottomInset: true,
           drawer: MyDrawer(),
           appBar: AppBar(
-            backgroundColor: Colors.blue[900],
+            backgroundColor: AppColors.appBarHomeColor,
             centerTitle: true,
             title: Text(
               S.of(context).mental_health,
               style: FontsStyle.appBarStyle,
             ),
-            automaticallyImplyLeading: false,
+            // automaticallyImplyLeading: false,
             bottom: PreferredSize(
               preferredSize: Size.fromHeight(80),
               child: Container(
                   height: 70,
-                  color: Colors.blue[100],
+                  color: AppColors.appBarHomeColor,
                   child: TabBar(
-                      labelColor: Colors.grey[400],
-                      unselectedLabelColor: Colors.grey[900],
-                      labelStyle: TextStyle(
-                          color: Colors.blue, fontWeight: FontWeight.w800),
+                      labelColor: Colors.white,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       tabs: <Widget>[
-                        Tab(icon: Icon(Icons.people_alt)),
-                        Tab(icon: Icon(Icons.person)),
-                        Tab(icon: Icon(Icons.article))
+                        Tab(icon: Icon(Icons.people_alt, size: 30)),
+                        Tab(icon: Icon(Icons.person, size: 30)),
+                        Tab(icon: Icon(Icons.article, size: 30))
                       ])),
             ),
           ),

@@ -108,12 +108,13 @@ class LogIn extends StatelessWidget {
                           backgroundColor: MaterialStateProperty.all(
                               AppColors.submitButton)),
                       onPressed: () {
-                        if (_formKey.currentState.validate()) {
-                          //   _formKey.currentState.save();
-                          //  _formKey.currentState.reset();
-                          //  ServerConnection.login(email, password);
-                          Navigator.of(context).pushNamed(HomePage.id);
-                        }
+                        // if (_formKey.currentState.validate()) {
+                        //   _formKey.currentState.save();
+                        //  _formKey.currentState.reset();
+                        //  ServerConnection.login(email, password);
+                        Navigator.of(context).pushNamed(HomePage.id);
+
+                        // }
                       },
                       child: Text(S.of(context).submit),
                     ),

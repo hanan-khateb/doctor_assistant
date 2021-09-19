@@ -1,4 +1,5 @@
 import 'package:doctor_assistant/models/SignUpInformation.dart';
+import 'package:doctor_assistant/services/GetCountries.dart';
 
 import '../screens/SignUpSecond.dart';
 import '../utils/FontsStyle.dart';
@@ -198,7 +199,9 @@ class SignUp extends StatelessWidget {
                     if (_formKey.currentState.validate()) {
                       // _formKey.currentState.save();
                       //_formKey.currentState.reset();
-                      Navigator.of(context).pushNamed(SignUpSecond.id);
+                      Future res = GetCountries.fetchAllCountries();
+                      res.then((value) =>
+                          Navigator.of(context).pushNamed(SignUpSecond.id));
                     }
                   },
                   child: Text(S.of(context).next),

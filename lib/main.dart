@@ -1,6 +1,11 @@
-import 'package:doctor_assistant/models/Countries.dart';
-import 'package:doctor_assistant/screens/HomePage.dart';
+import 'package:doctor_assistant/models/SignUpInformation.dart';
+import 'package:doctor_assistant/screens/ImagesOfResults.dart';
+import 'package:doctor_assistant/screens/OneImageViewer.dart';
+import 'package:doctor_assistant/screens/OnePatientProfile.dart';
 
+import 'models/Countries.dart';
+import 'screens/HomePage.dart';
+import 'screens/WelcomePage.dart';
 import 'screens/SignUpSecond.dart';
 import 'screens/IntroPage.dart';
 import 'screens/LogIn.dart';
@@ -17,6 +22,19 @@ void main() {
     providers: [
       ChangeNotifierProvider(create: (context) => FavoriteSetting()),
       ChangeNotifierProvider(create: (context) => Countries()),
+      FutureProvider<bool>(
+        create: (context) => SignUpInformation().getIsNewClient(),
+        initialData: false,
+        child: MyApp(),
+      ),
+      /* FutureProvider<void>(
+        create: (context) => SignUpInformation().removeClient(),
+        child: MyApp(),
+      ),
+      FutureProvider<void>(
+        create: (context) => SignUpInformation().addClient(),
+        child: MyApp(),
+      ),*/
     ],
     child: MyApp(),
   ));
@@ -41,6 +59,10 @@ class MyApp extends StatelessWidget {
         LogIn.id: (context) => LogIn(),
         IntroPage.id: (context) => IntroPage(),
         HomePage.id: (context) => HomePage(),
+        WelcomePage.id: (context) => WelcomePage(),
+        ImagesOfResults.id: (context) => ImagesOfResults(),
+        OneImageViewer.id: (context) => OneImageViewer(),
+        OnePatientProfile.id: (context) => OnePatientProfile()
       },
     );
   }
